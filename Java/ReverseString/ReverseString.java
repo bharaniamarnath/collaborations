@@ -1,8 +1,8 @@
-import java.util.*;
+import java.util.Scanner;
 
 class ReverseString{
 public static void main(String[] args){
-String s = null;
+String s;
 Scanner sc = new Scanner(System.in);
 System.out.println("Enter a string:");
 try{
@@ -16,9 +16,10 @@ sc.close();
 }
 public static void reverseString(String s){
 int l = s.length();
-System.out.printf("String length: %d\n", l);
-for(int i = l - 1; i >= 0; i--){
-System.out.print(s.substring(i, i+1) + " ");
+int i;
+System.out.printf("%d\n", l);
+for(i = l-1; i >= 0; --i){
+System.out.print(s.charAt(i));
 }
 }
 }
