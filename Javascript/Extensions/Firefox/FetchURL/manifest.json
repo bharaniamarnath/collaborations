@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "FetchURL",
+    "version": "1.0",
+    "description": "Fetch current browser window, tab, page URL",
+    "icons": {
+        "48": "icons/fu-48.png"
+    },
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "fetchurl.js"
+            ]
+        }
+    ]
+}
